@@ -1,0 +1,1 @@
+document.querySelector(&#39;.tocify-title&#39;).addEventListener(&#39;click&#39;, function() { var tocInner = document.querySelector(&#39;.tocify-inner&#39;); if (tocInner.style.display === &#39;none&#39;) { tocInner.style.display = &#39;block&#39;; } else { tocInner.style.display = &#39;none&#39;; } });
