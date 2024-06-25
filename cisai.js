@@ -34,7 +34,7 @@ const backMenuScript = () => {
         if (location.hash === "#!/history") {
             history.replaceState(null, document.title, location.pathname);
             setTimeout(() => {
-                location.replace("https://www.mtalkblog.com/2024/02/cara-buat-gambar-biasa-jadi-ilustrasi.html");
+                location.replace("https://www.mtalkblog.com/p/kerjasama-link-building-dengan-mtalkblog.html");
             }, 0);
         }
     }, false);
