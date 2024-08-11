@@ -3,21 +3,20 @@ const googlePixelScript = () => {
     const schema = {
         "@context": "https://schema.org/",
         "@type": "Person",
-        "name": "Galih Enggarnanto",
-        "url": "https://www.mtalkblog.com/p/about-me.html",
-        "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCIPMrnec3GqAvg7BqUxnaUCryMLds2W8DchKRljsYKxr69-I_twRXpxzTbLRcMJ-Y-0zYLoiUKe97nbkbODZy4aZ9HuSXchRPJ36lZ2PMKj8Lzj6Mq-ZUw99O7bSQ0xVsElxehv6Q12uBMQolpdrMg0gjMFzUORnTlsYvT802Rc-YsOc/s220/mtalkblogArtboard%201logo.png",
+        "name": "Alam Semenit",
+        "url": "https://www.alamsemenit.eu.org/p/about-me.html",
+        "image": "https://blogger.googleusercontent.com/img/a/AVvXsEiwl9Zn9hC1XqTf5jCi0K5TIMQrbBITf7JwrhQJkl3MmkHnqKtV-_WPyM3ONDKgYZBg-7ZZCWPfGqNKw-EbIdVovFW15j9Ypg9L3nA89uejr4Y-7I67V_sokKKyW1XMxG92Lz4a5mHI_02Kzh-SblA48tTiYvyB7AZj3Hh7iKRLXvv6qnVXCSZlQdyuVFM=s150",
         "sameAs": [
-            "https://www.facebook.com/MTalksite",
-            "https://www.instagram.com/genggar_nt",
-            "https://www.youtube.com/@mtalkblog",
-            "https://www.linkedin.com/in/galih-enggarnanto/",
-            "https://twitter.com/m_mtalk",
-            "https://www.mtalkblog.com/"
+            "https://www.facebook.com/AlamSemenitReal",
+            "https://www.instagram.com/alamsemenit",
+            "https://www.youtube.com/@alamsemenit",
+            "https://twitter.com/AlamSemenit",
+            "https://www.alamsemenit.eu.org/"
         ],
-        "jobTitle": "Technology Content Writer",
+        "jobTitle": "Youtuber",
         "worksFor": {
             "@type": "Organization",
-            "name": "Mtalkblog.com"
+            "name": "alam semenit"
         }
     };
     const script = document.createElement('script');
@@ -34,7 +33,7 @@ const backMenuScript = () => {
         if (location.hash === "#!/history") {
             history.replaceState(null, document.title, location.pathname);
             setTimeout(() => {
-                location.replace("https://www.mtalkblog.com/p/kerjasama-link-building-dengan-mtalkblog.html");
+                location.replace("https://www.alamsemenit.eu.org/");
             }, 0);
         }
     }, false);
@@ -47,8 +46,8 @@ const updateAnchorTags = () => {
         postBodies.forEach((anchor) => {
             const href = anchor.getAttribute('href');
             const text = anchor.textContent.toLowerCase().trim();
-            if ((href === 'https://www.mtalkblog.com/' || href === 'https://mtalkblog.com/') && text !== '') {
-                const searchURL = 'https://www.mtalkblog.com/search?q=' + encodeURIComponent(text);
+            if ((href === 'https://www.alamsemenit.eu.org/' || href === 'https://www.alamsemenit.eu.org/') && text !== '') {
+                const searchURL = 'https://www.alamsemenit.eu.org/search?q=' + encodeURIComponent(text);
                 anchor.setAttribute('href', searchURL);
             }
         });
